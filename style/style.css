@@ -1,0 +1,201 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    background-size: cover;
+    padding-top: 30px; /* Ajuste para espaçar o conteúdo do menu fixo */
+}
+
+/* Header */
+header {
+    background-color: black;
+    padding: 20px 0;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Centraliza o menu */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:black;
+    z-index: 1000;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    align-items: center;
+    width: 100%;
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+
+/* Links principais */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+/* Links gerais */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Abaixo do item principal */
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    color: #1e90ff;
+}
+
+/* Mostrar dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-lateral {
+    font-size: 28px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 1000; /* Garantir que o ícone de menu sempre ficará por cima */
+}
+
+/* Menu lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Fora da tela inicialmente */
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 20px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.side-menu a:hover {
+    color: #1e90ff;
+}
+
+/* Botão de fechar no menu lateral */
+.close-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: right;
+}
+
+/* Estilo das seções */
+.section {
+    width: 100%;  /* Diminuir a largura das seções */
+    max-width: 1400px;  /* Largura máxima das seções em telas grandes */
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px auto; /* Centraliza a seção */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+/* Títulos e parágrafos */
+.section h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.section p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Esconde os links principais em telas pequenas */
+    }
+}
+
+/* Mostrar menu lateral */
+.side-menu.active {
+    right: 0;
+}
