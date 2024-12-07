@@ -8,11 +8,22 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: #333;
+    color: black;
     line-height: 1.6;
     background-size: cover;
-    padding-top: 30px; 
+    padding-top: 10px; 
 }
+
+/*header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}*/
 
 header {
     background-color: black;
@@ -157,13 +168,79 @@ nav .container {
     text-align: right;
 }
 
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-form, .contact-info, .social-media {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: black;
+}
+
+.contact-info p, .social-media p {
+    font-size: 1rem;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #030a4b;
+    color: white;
+    margin-top: 30px;
+}
+
 /* Estilo das seções */
 .section {
     width: 100%;  
     max-width: 1400px;  
     padding: 80px 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(169, 185, 255, 0.8);
     margin: 50px auto;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

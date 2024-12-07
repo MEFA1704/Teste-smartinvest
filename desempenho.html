@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/stylee.css">
+    <script src="script/JavaScript.js"></script>
+    <title>Desempenho</title>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação centralizada -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#investimentos" class="dropbtn">Aulas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#s.i">Simulação de Investimentos</a></li>
+                        <li><a href="#c.t.i">Cursos e Tutoriais Interativos</a></li>
+                        <li><a href="#v.a">Video Aulas</a></li>
+                        <li><a href="g.f">Game de Finanças</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSePqOfXmxNCveMcZgLW-jAKnMnjX9itu7C62lXYL-ol1_J0WA/viewform?usp=header">Feedback</a></li>
+                <li><a href="criacao.html">Criação</a></li>
+                <li class="dropdown">
+                    <a href="#sobre" class="dropbtn">Sobre</a>
+                    <ul class="dropdown-content">
+                        <li><a href="comunidade.html">Comunidade</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+
+        <!-- Menu lateral -->
+        <div class="menu-lateral" onclick="toggleMenu()">&#9776;</div>
+
+        <!-- Menu lateral ao clicar no ícone -->
+        <aside id="side-menu" class="side-menu">
+            <button class="close-btn" onclick="toggleMenu()">&times;</button>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="desempenho.html">Desempenho</a></li>
+                <li><a href="#configuracoes">Configurações</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
+                <li><a href="#sair">Sair</a></li>
+            </ul>
+        </aside>
+
+        <!--Seções/Tabela-->
+    <section id="desempenho" class="section">
+        <div class="content-container">
+            <h2>Desempenho</h2>
+            <p>Graficos fictícios para demostra o seu possivel desempenho</p>
+        </div>
+    </section>
+
+    <section id="pontuacao" class="section">
+        <div class="container">
+            <h1>Tabela de Pontuação</h1>
+            <table id="tabela-notas">
+                <thead>
+                    <tr>
+                        <th>Aluno</th>
+                        <th>Matéria</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>Simulação</td>
+                        <td class="nota">8.5</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas</td>
+                        <td>Cursos</td>
+                        <td class="nota">6.0</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>Video Aulas</td>
+                        <td class="nota">9.2</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="calcular-media">Calcular Média</button>
+            <p id="media"></p>
+        </div>
+    </section>
+</body>
+</html>

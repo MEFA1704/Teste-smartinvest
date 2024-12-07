@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação - Smart Investimentos</title>
+    <link rel="stylesheet" href="style/Styleeee.css">
+    <script src="script/JavaScript.js"></script>
+</head>
+<body>
+
+    <header>
+        <!-- Barra de navegação-->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#investimentos" class="dropbtn">Aulas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#s.i">Simulação de Investimentos</a></li>
+                        <li><a href="#c.t.i">Cursos e Tutoriais Interativos</a></li>
+                        <li><a href="#v.a">Video Aulas</a></li>
+                        <li><a href="g.f">Game de Finanças</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSePqOfXmxNCveMcZgLW-jAKnMnjX9itu7C62lXYL-ol1_J0WA/viewform?usp=header">Feedback</a></li>
+                <li><a href="criacao.html">Criação</a></li>
+                <li class="dropdown">
+                    <a href="#sobre" class="dropbtn">Sobre</a>
+                    <ul class="dropdown-content">
+                        <li><a href="comunidade.html">Comunidade</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Conheça nossa equipe de criação</h1>
+            <p>Aqui estão os criadores por trás do Smart Investimentos, cada um trazendo sua expertise para o nosso sucesso.</p>
+        </div>
+    </header>  
+
+    <!-- Menu lateral/Menu lateral ao clicar no ícone  -->
+    <div class="menu-lateral" onclick="toggleMenu()">&#9776;</div>
+
+    <aside id="side-menu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="desempenho.html">Desempenho</a></li>
+            <li><a href="#configuracoes">Configurações</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+            <li><a href="#sair">Sair</a></li>
+        </ul>
+    </aside>
+
+    <!--Seções-->
+    <section class="team-section">
+        <div class="team-member">
+            <div id="rebeca" class="polaroid" data-info="Este criador foi responsável pela parte de desenvolvimento front-end, criando uma interface amigável e intuitiva para os usuários.">
+                <img src="img/Rebeca.jpeg" alt="Criador 1">
+            </div>
+            <h3>Rebeca</h3>
+            <p>Este criador foi responsável pela parte de desenvolvimento front-end.</p>
+        </div>
+
+        <div class="team-member">
+            <div class="polaroid" data-info="Este criador trabalhou no design visual do site, cuidando da identidade visual, criando uma estética moderna e que transmite confiança.">
+                <img src="img/Maria Eduarda.jpeg" alt="Criador 2">
+            </div>
+            <h3>Maria Eduarda</h3>
+            <p>Este criador trabalhou no design visual do site.</p>
+        </div>
+
+        <div class="team-member">
+            <div class="polaroid" data-info="Este criador ficou responsável pela parte de conteúdo, garantindo que a comunicação com os clientes fosse clara e objetiva, com foco em conversões.">
+                <img src="img/alex.jpg" alt="Criador 3">
+            </div>
+            <h3>Alex</h3>
+            <p>Este criador ficou responsável pela parte de conteúdo.</p>
+        </div>
+
+        <div class="team-member">
+            <div class="polaroid" data-info="Este criador ficou responsável pela parte de conteúdo, garantindo que a comunicação com os clientes fosse clara e objetiva, com foco em conversões.">
+                <img src="img/Monyque.jpeg" alt="Criador 3">
+            </div>
+            <h3>Monyque</h3>
+            <p>Este criador ficou responsável pela parte de conteúdo.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Investimentos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

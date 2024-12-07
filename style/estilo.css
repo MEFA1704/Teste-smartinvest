@@ -8,11 +8,88 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: #333;
+    color: black;
     line-height: 1.6;
     background-size: cover;
-    padding-top: 30px; 
+    padding-top: 10px; 
 }
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forum ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.forum ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+
+.forum ul li h3 {
+    margin: 0;
+}
+
+
+.forum ul li p {
+    color: #666;
+    font-size: 14px;
+}
+
+.postar ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.postar ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+
+.postar ul li h3 {
+    margin: 0;
+}
+
+
+.postar ul li p {
+    color: #666;
+    font-size: 14px;
+}
+
+form input, form textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #150072;
+}
+
 
 header {
     background-color: black;
@@ -157,34 +234,12 @@ nav .container {
     text-align: right;
 }
 
-/* Estilo das seções */
-.section {
-    width: 100%;  
-    max-width: 1400px;  
-    padding: 80px 20px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 50px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease-out forwards;
-}
-
-
 /* Títulos e parágrafos */
-.section h2 {
+.section h1 {
+    text-align: center;
     font-size: 2.5rem;
     color: black;
     margin-bottom: 20px;
-}
-
-
-.section p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.8;
-    margin: 0 auto;
-    max-width: 900px;
 }
 
 /* Responsividade */
@@ -197,4 +252,12 @@ nav .container {
 /* Mostrar menu lateral */
 .side-menu.active {
     right: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #030a4b;
+    color: white;
+    margin-top: 30px;
 }

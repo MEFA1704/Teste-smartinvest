@@ -8,19 +8,30 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: #333;
+    color: black;
     line-height: 1.6;
     background-size: cover;
-    padding-top: 30px; 
+    padding-top: 10px; /* Ajuste para espaçar o conteúdo do menu fixo */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 header {
     background-color: black;
-    padding: 20px 0;
+    padding: 25px 0;
     position: relative;
     color: #fff;
     display: flex;
     justify-content: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -152,24 +163,71 @@ nav .container {
     font-size: 28px;
     background: none;
     border: none;
-    color: #fff;
+    color: blue;
     cursor: pointer;
     text-align: right;
 }
 
 /* Estilo das seções */
 .section {
-    width: 100%;  
-    max-width: 1400px;  
+    width: 100%;  /* Diminuir a largura das seções */
+    max-width: 1400px;  /* Largura máxima das seções em telas grandes */
     padding: 80px 20px;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
-    margin: 50px auto;
+    margin: 50px auto; /* Centraliza a seção */
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     animation: fadeInUp 1s ease-out forwards;
 }
 
+/*Tabela de Pontuação*/
+h1 {
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #110a70;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.nota-baixa {
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(3, 13, 105);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 /* Títulos e parágrafos */
 .section h2 {

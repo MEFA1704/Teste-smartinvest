@@ -11,16 +11,99 @@ body {
     color: #333;
     line-height: 1.6;
     background-size: cover;
-    padding-top: 30px; 
+    padding-top: 10px; 
 }
 
+
 header {
-    background-color: black;
-    padding: 20px 0;
+    background-color: #1e3d58;
+    color: white;
+    padding: 20px;
+    text-align: center;
     position: relative;
     color: #fff;
     display: flex;
     justify-content: center; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.polaroid {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.polaroid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.polaroid:hover img {
+    transform: scale(1.1);
+    z-index: 1000;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3d58;
+    color: white;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 nav {
@@ -28,7 +111,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color:black;
+    background-color: #1e3d58;
     z-index: 1000;
 }
 
@@ -155,36 +238,6 @@ nav .container {
     color: #fff;
     cursor: pointer;
     text-align: right;
-}
-
-/* Estilo das seções */
-.section {
-    width: 100%;  
-    max-width: 1400px;  
-    padding: 80px 20px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 50px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease-out forwards;
-}
-
-
-/* Títulos e parágrafos */
-.section h2 {
-    font-size: 2.5rem;
-    color: black;
-    margin-bottom: 20px;
-}
-
-
-.section p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.8;
-    margin: 0 auto;
-    max-width: 900px;
 }
 
 /* Responsividade */

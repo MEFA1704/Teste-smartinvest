@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Smart Investimentos</title>
+    <link rel="stylesheet" href="style/estilooo.css">
+    <script src="script/JavaScript.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação-->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#investimentos" class="dropbtn">Aulas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#s.i">Simulação de Investimentos</a></li>
+                        <li><a href="#c.t.i">Cursos e Tutoriais Interativos</a></li>
+                        <li><a href="#v.a">Video Aulas</a></li>
+                        <li><a href="g.f">Game de Finanças</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSePqOfXmxNCveMcZgLW-jAKnMnjX9itu7C62lXYL-ol1_J0WA/viewform?usp=header">Feedback</a></li>
+                <li><a href="criacao.html">Criação</a></li>
+                <li class="dropdown">
+                    <a href="#sobre" class="dropbtn">Sobre</a>
+                    <ul class="dropdown-content">
+                        <li><a href="comunidade.html">Comunidade</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Menu lateral/Menu lateral ao clicar no ícone  -->
+        <div class="menu-lateral" onclick="toggleMenu()">&#9776;</div>
+
+        <aside id="side-menu" class="side-menu">
+            <button class="close-btn" onclick="toggleMenu()">&times;</button>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="desempenho.html">Desempenho</a></li>
+                <li><a href="#configuracoes">Configurações</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
+                <li><a href="#sair">Sair</a></li>
+            </ul>
+        </aside>
+
+        <!--Seções-->
+    <section id="contato" class="section">
+        <div class="content-container">
+            <h1>Contato</h1>
+            <p>Estamos aqui para ajudar! Entre em contato com a nossa equipe para mais informações sobre investimentos.</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Formulário de Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone (opcional)</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </section>
+
+    <section class="contact-info">
+        <h2>Informações de Contato</h2>
+        <p><strong>E-mail:</strong> suporte@smartinvest.com</p>
+        <p><strong>WhatsApp:</strong> (31) 9951-3664</p>
+        <p><strong>Endereço:</strong> Rua paulista, 123 - Belo Horizonte, MG</p>
+    </section>
+
+    <section class="social-media">
+        <h2>Redes Sociais</h2>
+        <p>Siga-nos para mais dicas de investimentos:</p>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">LinkedIn</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Investimentos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

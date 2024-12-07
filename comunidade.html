@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade Smart</title>
+    <link rel="stylesheet" href="style/estilo.css">
     <script src="script/JavaScript.js"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <title>Smart - Investimentos</title>
 </head>
 <body>
     <header>
-        <!-- Barra de navegação-->
+        <!-- Barra de navegação centralizada -->
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
@@ -33,10 +33,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="container">
-            <h1>Bem-vinda ao Smart</h1>
-        </div>
-    </header>  
+    </header>
 
     <!-- Menu lateral/Menu lateral ao clicar no ícone  -->
     <div class="menu-lateral" onclick="toggleMenu()">&#9776;</div>
@@ -52,14 +49,38 @@
         </ul>
     </aside>
 
-    <!--Seções-->
-    <section id="sobre" class="section">
-        <div class="content-container">
-            <h2>Sobre</h2>
-            <p>O Smart Investimentos é um aplicativo revolucionário que combina educação financeira, simulação de investimentos e gamificação, projetado especialmente para jovens e iniciantes no mundo das finanças. Ele transforma o aprendizado sobre investimentos e planejamento financeiro em uma experiência acessível, prática e envolvente.</p>
-            </br>
-            <p>Com a crescente necessidade de alfabetização financeira em um mundo cada vez mais complexo, o Smart surge como uma ferramenta essencial para ajudar os usuários a desenvolverem habilidades fundamentais para o gerenciamento estratégico de dinheiro, tudo isso enquanto se divertem e exploram o mercado financeiro em um ambiente controlado.</p>
+    <main>
+        <section class="section">
+        <div>
+            <h1>Comunidade Smart</h1>
         </div>
-    </section>
+        </section>
+        <section class="forum">
+            <h2>Fórum de Discussões</h2>
+            <ul id="topicos">
+                <li>
+                    <h3><a href="#">Como começar a investir?</a></h3>
+                    <p>Discussão iniciada por <strong>Rebeca</strong></p>
+                </li>
+                <li>
+                    <h3><a href="#">Vale a pena investir em ações em 2025?</a></h3>
+                    <p>Discussão iniciada por <strong>Maria</strong></p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="postar">
+            <h2>Iniciar Nova Discussão</h2>
+            <form id="nova-discussao">
+                <input type="text" id="titulo" placeholder="Título do tópico">
+                <textarea id="conteudo" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <button type="submit" class="botao">Postar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Smart - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
